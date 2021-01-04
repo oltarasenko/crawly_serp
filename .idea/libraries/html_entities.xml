@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="html_entities" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/html_entities/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/html_entities/lib" />
+    </SOURCES>
+  </library>
+</component>
