@@ -4,15 +4,15 @@ defmodule GoogleSerp do
   """
 
   @doc """
-  Hello world.
+  Start a crawler with a given keyword as a starting point
 
   ## Examples
 
-      iex> GoogleSerp.hello()
-      :world
+      iex> GoogleSerp.crawl("scraping elixir")
+      :ok
 
   """
-  def hello do
-    :world
+  def crawl(query) do
+    Crawly.Engine.start_spider(Spider, query: query)
   end
 end

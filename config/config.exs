@@ -7,7 +7,7 @@ config :crawly,
          {Crawly.Middlewares.UserAgent, user_agents: ["Twitterbot"]}
        ],
        pipelines: [
-         {Crawly.Pipelines.Validate, fields: [:title, :link, :description]  },
+         {Crawly.Pipelines.Validate, fields: [:title, :link, :description, :position]},
          Crawly.Pipelines.JSONEncoder,
          {Crawly.Pipelines.WriteToFile, extension: "json", folder: "/tmp"}
        ]
